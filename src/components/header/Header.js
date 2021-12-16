@@ -24,7 +24,7 @@ const Header = ({ handleToggleSidebar }) => {
         onClick={() => handleToggleSidebar()}
       />
       <img
-        src="http://pngimg.com/uploads/youtube/youtube_PNG2.png"
+        src="https://pngimg.com/uploads/youtube/youtube_PNG2.png"
         alt="..."
         className="header_logo"
       />
