@@ -8,10 +8,12 @@
   &_left {
     position: relative;
     text-align: center;
+    padding-left: 0 !important;
   }
 
   &_thumbnail {
     width: 100%;
+
     &-channel {
       width: 50%;
       border-radius: 50%;

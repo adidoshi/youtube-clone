@@ -8,6 +8,7 @@ import SingleComment from "./SingleComment";
 import "./_comments.scss";
 
 const Comments = ({ videoId, totalComments }) => {
+  const user = useSelector((state) => state.auth?.user);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -32,8 +33,8 @@ const Comments = ({ videoId, totalComments }) => {
       <p>{totalComments} Comments</p>
       <div className="comments_form d-flex w-100 my-2">
         <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
-          alt=""
+          src={user?.photoURL}
+          alt="avatar"
           className="rounded-circle me-3"
         />
         <form onSubmit={handleComment} className="d-flex flex-grow-1">

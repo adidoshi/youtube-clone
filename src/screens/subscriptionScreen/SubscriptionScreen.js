@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import VideoHorizontal from "../../components/videoHorizontal/VideoHorizontal";
 import { getSubscriptionChannel } from "../../redux/actions/videosAction";
 import "./_subscriptionScreen.scss";
+import { Helmet } from "react-helmet";
 
 const SubscriptionScreen = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,9 @@ const SubscriptionScreen = () => {
 
   return (
     <Container fluid>
+      <Helmet>
+        <title>Your Subscriptions</title>
+      </Helmet>
       {!loading ? (
         videos?.map((video, i) => (
           <VideoHorizontal video={video} key={i} subScreen />

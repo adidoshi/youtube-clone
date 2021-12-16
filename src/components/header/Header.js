@@ -4,6 +4,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { MdNotifications, MdApps } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = ({ handleToggleSidebar }) => {
   const [input, setInput] = useState("");
@@ -13,6 +14,8 @@ const Header = ({ handleToggleSidebar }) => {
     e.preventDefault();
     history.push(`/search/${input}`);
   };
+
+  const user = useSelector((state) => state.auth?.user);
   return (
     <div className=" header">
       <FaBars
@@ -41,10 +44,7 @@ const Header = ({ handleToggleSidebar }) => {
       <div className="header_icons">
         <MdNotifications size={28} />
         <MdApps size={28} />
-        <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
-          alt="avatar"
-        />
+        <img src={user?.photoURL} alt="avatar" />
       </div>
     </div>
   );

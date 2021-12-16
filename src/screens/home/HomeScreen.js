@@ -9,6 +9,7 @@ import {
   getVideosByCategory,
 } from "../../redux/actions/videosAction";
 import InfiniteScroll from "react-infinite-scroll-component";
+import { Helmet } from "react-helmet";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -30,6 +31,9 @@ const HomeScreen = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Youtube Clone - Home</title>
+      </Helmet>
       <Container>
         <CategoriesBar />
         <InfiniteScroll

@@ -71,7 +71,7 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
       : history.push(`/channel/${_channelId}`);
   };
 
-  const thumbnail = !isVideo && "videoHorizontal_thumbnail-channel";
+  // const thumbnail = !isVideo && "videoHorizontal_thumbnail-channel";
   return (
     <Row
       className="videoHorizontal m-1 py-2 align-items-center"
@@ -83,7 +83,7 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
         <LazyLoadImage
           src={medium.url}
           effect="blur"
-          className={`videoHorizontal_thumbnail ${thumbnail}`}
+          className={`videoHorizontal_thumbnail`}
           wrapperClassName="videoHorizontal_thumbnail-wrapper"
         />
         {isVideo && (

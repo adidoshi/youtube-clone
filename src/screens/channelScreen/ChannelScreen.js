@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import "./_channelScreen.scss";
 import { getVideosByChannel } from "../../redux/actions/videosAction";
 import { getChannelDetails } from "../../redux/actions/channelAction";
-
+import { Helmet } from "react-helmet";
 import numeral from "numeral";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import Video from "../../components/video/Video";
@@ -26,6 +26,9 @@ const ChannelScreen = () => {
   );
   return (
     <>
+      <Helmet>
+        <title>{snippet?.title}</title>
+      </Helmet>
       <div className="px-5 py-2 my-2 d-flex justify-content-between align-items-center channelHeader">
         <div className="d-flex align-items-center">
           <img src={snippet?.thumbnails?.default?.url} alt="" />
