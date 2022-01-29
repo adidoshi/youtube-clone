@@ -2,6 +2,7 @@
 
 ## Tech Stack Used -
 * FrontEnd: ReactJs
+* Redux for application state management
 * Styling: SASS (preprocessor scripting language that is compiled into CSS.)
 * Google O authentication with firebase 
 * Youtube API V3 for endpoint requests.
