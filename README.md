@@ -8,9 +8,7 @@
 - Google O authentication with firebase
 - Youtube API V3 for endpoint requests.
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/>
-<img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/>
 
 ### Deployment on firebase.
 
@@ -31,10 +29,10 @@
 ![image info](./src/assets/3.png)
 
 - Related videos fetched besides the actual play vid.
-
-- Channel Page & videos of that respective channel fetched on that page.
-- POST comment on the video by actual google user id.
 - Channel Subscriptions page of the user.
+- POST comment on the video by actual google user id.
+- 
+- Channel Page & videos of that respective channel fetched on that page.
 
 ![image info](./src/assets/2.png)
 
