@@ -31,7 +31,6 @@
 - Related videos fetched besides the actual play vid.
 - Channel Subscriptions page of the user.
 - POST comment on the video by actual google user id.
-- 
 - Channel Page & videos of that respective channel fetched on that page.
 
 ![image info](./src/assets/2.png)
