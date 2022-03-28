@@ -1,13 +1,6 @@
 import React from "react";
 import "./_sidebar.scss";
-import {
-  MdSubscriptions,
-  MdExitToApp,
-  MdThumbUp,
-  MdHistory,
-  MdLibraryBooks,
-  MdHome,
-} from "react-icons/md";
+import { MdSubscriptions, MdExitToApp, MdHome } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { logout } from "../../redux/actions/authAction";
 import { Link } from "react-router-dom";
@@ -35,21 +28,6 @@ const Sidebar = ({ sidebar, handleToggleSidebar }) => {
             <span>Subscriptions</span>
           </li>
         </Link>
-
-        <li>
-          <MdThumbUp size={23} />
-          <span>Liked Video</span>
-        </li>
-
-        <li>
-          <MdHistory size={23} />
-          <span>History</span>
-        </li>
-
-        <li>
-          <MdLibraryBooks size={23} />
-          <span>Library</span>
-        </li>
 
         <hr />
 

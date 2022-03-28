@@ -19,9 +19,9 @@ const VideoMetadata = ({ video: { snippet, statistics }, videoId }) => {
   const { snippet: channelSnippet, statistics: channelStatistics } =
     useSelector((state) => state.channelDetails.channel);
 
-  const subscriptionStatus = useSelector(
-    (state) => state.channelDetails.subscriptionStatus
-  );
+  // const subscriptionStatus = useSelector(
+  //   (state) => state.channelDetails.subscriptionStatus
+  // );
 
   useEffect(() => {
     dispatch(getChannelDetails(channelId));
@@ -62,12 +62,12 @@ const VideoMetadata = ({ video: { snippet, statistics }, videoId }) => {
             </span>
           </div>
         </div>
-        <button
+        {/* <button
           className={`btn border-0 p-2 m-2 ${
             subscriptionStatus && "btn-gray"
           }`}>
           {subscriptionStatus ? "Subscribed" : "Subscribe"}
-        </button>
+        </button> */}
       </div>
       <div className="videoMetaData_description">
         <ShowMoreText

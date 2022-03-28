@@ -26,6 +26,7 @@ const Comments = ({ videoId, totalComments }) => {
     if (text.length === 0) return;
     dispatch(addComment(videoId, text));
     setText("");
+    window.location.reload();
   };
 
   return (

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./_header.scss";
 import { AiOutlineSearch } from "react-icons/ai";
-import { MdNotifications, MdApps } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -42,8 +41,6 @@ const Header = ({ handleToggleSidebar }) => {
       </form>
 
       <div className="header_icons">
-        <MdNotifications size={28} />
-        <MdApps size={28} />
         <img src={user?.photoURL} alt="avatar" />
       </div>
     </div>
